@@ -361,7 +361,7 @@ export default function App() {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       audioContextRef.current = new AudioContext();
       
-      const wsUrl = `ws://localhost:8001/ws/audio`;
+      const wsUrl = process.env.NEXT_PUBLIC_GEMINI_LIVE_WS_URL || `ws://localhost:8001/ws/audio`;
       const ws = new WebSocket(wsUrl);
       
       ws.binaryType = 'arraybuffer';

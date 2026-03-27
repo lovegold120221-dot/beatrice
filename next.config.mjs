@@ -11,6 +11,7 @@ const nextConfig = {
     OLLAMA_MODEL: process.env.OLLAMA_MODEL,
     NEXT_PUBLIC_OLLAMA_MODEL: process.env.NEXT_PUBLIC_OLLAMA_MODEL || process.env.OLLAMA_MODEL,
     NEXT_PUBLIC_TTS_API_URL: process.env.NEXT_PUBLIC_TTS_API_URL || "http://localhost:8002",
+    NEXT_PUBLIC_GEMINI_LIVE_WS_URL: process.env.NEXT_PUBLIC_GEMINI_LIVE_WS_URL || "ws://localhost:8001/ws/audio",
   },
   images: {
     remotePatterns: [

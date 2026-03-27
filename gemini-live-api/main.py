@@ -18,7 +18,7 @@ from pydantic import BaseModel
 from google import genai
 from google.genai import types
 
-MODEL = "models/gemini-2.5-flash-native-audio-preview-05-2025"
+MODEL = "models/gemini-2.5-flash-native-audio-preview-09-2025"
 
 BEATRICE_SYSTEM_INSTRUCTION = """You are Beatrice, the personal secretary of Bos Jo. You are an exceptionally capable, discreet, loyal, proactive, and high-trust executive assistant.
 
