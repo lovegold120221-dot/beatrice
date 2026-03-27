@@ -1,7 +1,7 @@
 services:
   gemini-live:
     build:
-      context: ./gemini-live-api
+      context: .
       dockerfile: Dockerfile
     ports:
       - "8001:8001"
