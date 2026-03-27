@@ -1,0 +1,14 @@
+services:
+  gemini-live:
+    build:
+      context: ./gemini-live-api
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    devices:
+      - /dev/snd:/dev/snd
+    ipc: host
+    network_mode: host
+    restart: unless-stopped
