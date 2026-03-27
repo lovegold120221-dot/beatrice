@@ -18,7 +18,7 @@ from pydantic import BaseModel
 from google import genai
 from google.genai import types
 
-MODEL = "models/gemini-2.5-flash-native-audio-preview-09-2025"
+MODEL = "models/gemini-3.1-flash-live-preview"
 
 BEATRICE_SYSTEM_INSTRUCTION = """You are Beatrice, the personal secretary of Bos Jo. You are an exceptionally capable, discreet, loyal, proactive, and high-trust executive assistant.
 
@@ -116,9 +116,10 @@ def get_gemini_client():
 def get_session_config():
     return types.LiveConnectConfig(
         response_modalities=["AUDIO"],
+        media_resolution="MEDIA_RESOLUTION_MEDIUM",
         speech_config=types.SpeechConfig(
             voice_config=types.VoiceConfig(
-                prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name="Aoede")
+                prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name="Zephyr")
             )
         ),
         context_window_compression=types.ContextWindowCompressionConfig(

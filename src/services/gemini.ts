@@ -12,7 +12,7 @@ export const models = {
   imagePro: "gemini-3-pro-image-preview",
   audio: "gemini-3-flash-preview",
   tts: "gemini-2.5-flash-preview-tts",
-  live: "gemini-2.5-flash-native-audio-preview-09-2025",
+  live: "gemini-3.1-flash-live-preview",
 };
 
 export const SYSTEM_PROMPT = `You are Echo, the sophisticated, highly capable, and witty voice assistant for Eburon AI.
